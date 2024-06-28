@@ -71,7 +71,7 @@ footer img {
 }
 
 .secondsection {
-  background-image: url(assets/bg-image.png);
+  background-image: url(/W1D3/assets/bg-image.png);
   height: 150px;
   background-size: cover;
   position: relative;
