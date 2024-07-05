@@ -2,10 +2,6 @@ a button {
   font-family: sans-serif;
 }
 
-img {
-  max-width: 50px;
-}
-
 .pointer {
   cursor: pointer;
 }
@@ -14,25 +10,23 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1px solid gray;
   height: 45px;
 }
 
-.main-page {
+nav,
+.main-page,
+article,
+aside,
+.twitter-section,
+.people-element {
   display: flex;
-  box-sizing: border-box;
+  background-color: whitesmoke;
 }
 
 .header-button {
   display: flex;
   width: 25%;
   justify-content: space-evenly;
-}
-
-h1 {
-  font-size: 3rem;
-  margin: 0;
-  font-weight: bold;
 }
 
 button {
@@ -43,13 +37,106 @@ button {
 }
 
 main {
-  display: flex;
+  height: 1000px;
   width: 70%;
-  border: 0.5px solid black;
+  padding: 5rem 2rem;
+  border-right: 0.5px solid lightgrey;
 }
 
 aside {
   width: 30%;
   height: 1000px;
-  border: 0.5px solid black;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1rem;
+}
+
+nav a {
+  margin-right: 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+article {
+  margin-top: 5rem;
+}
+.article-text {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-img {
+  width: 20%;
+  height: 200px;
+  background-color: black;
+}
+
+.article-label {
+  font-weight: 200;
+  display: inline-block;
+}
+
+.article-icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.twitter-section,
+.recommended-section,
+.people-section {
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  text-align: left;
+  justify-content: space-around;
+  padding: 2rem 0;
+  border-bottom: 1px solid grey;
+}
+
+.twitter-section > * {
+  margin: 1rem;
+}
+
+.pills {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pill {
+  margin: 0.3rem;
+}
+
+.people-element {
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.people-img {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.people-names {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  padding-left: 1rem;
 }
