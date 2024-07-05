@@ -1,0 +1,54 @@
+a button {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid gray;
+  height: 45px;
+}
+
+.main-page {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.header-button {
+  display: flex;
+  width: 25%;
+  justify-content: space-evenly;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: bold;
+}
+
+button {
+  padding: 0 0.5rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+}
+
+main {
+  display: flex;
+  width: 70%;
+  border: 0.5px solid black;
+}
+
+aside {
+  width: 30%;
+  height: 1000px;
+  border: 0.5px solid black;
+}
