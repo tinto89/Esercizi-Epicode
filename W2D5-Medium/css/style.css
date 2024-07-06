@@ -50,6 +50,10 @@ aside {
   align-items: center;
 }
 
+aside a {
+  color: grey;
+}
+
 nav {
   border-bottom: 1px solid lightgrey;
   padding-bottom: 1rem;
@@ -76,7 +80,7 @@ article {
 .article-img {
   width: 20%;
   height: 200px;
-  background-color: black;
+  background-color: bisque;
 }
 
 .article-label {
@@ -88,7 +92,7 @@ article {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: black;
+  background-color: blue;
   border-radius: 50%;
 }
 
@@ -127,7 +131,7 @@ article {
 .people-img {
   width: 60px;
   height: 60px;
-  background-color: black;
+  background-color: royalblue;
   border-radius: 50%;
 }
 
