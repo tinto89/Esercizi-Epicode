@@ -1,9 +1,19 @@
-a button {
+a button,
+h2,
+p,
+h3,
+ul,
+li {
   font-family: sans-serif;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -13,14 +23,34 @@ header {
   height: 45px;
 }
 
+h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin: 0 0 10px;
+}
+.main-page {
+  background-color: whitesmoke;
+}
+
 nav,
 .main-page,
 article,
 aside,
 .twitter-section,
-.people-element {
+.people-element,
+.article-text,
+.article-bottom,
+.article-bottom > ul,
+.article-bottom > div,
+.article-author,
+.twitter-button,
+.medium-twitter {
   display: flex;
-  background-color: whitesmoke;
 }
 
 .header-button {
@@ -30,8 +60,8 @@ aside,
 }
 
 button {
-  padding: 0 0.5rem;
-  border: 2px solid black;
+  padding: 0.3rem 0.5rem 0.3rem;
+  border: 1px solid gray;
   border-radius: 2rem;
   cursor: pointer;
 }
@@ -45,13 +75,14 @@ main {
 
 aside {
   width: 30%;
-  height: 1000px;
+  height: 100%;
   flex-direction: column;
   align-items: center;
 }
 
 aside a {
   color: grey;
+  text-decoration: underline;
 }
 
 nav {
@@ -59,40 +90,41 @@ nav {
   padding-bottom: 1rem;
 }
 
-nav a {
+nav .tabs {
   margin-right: 3rem;
   font-size: 1.3rem;
   font-weight: bold;
-  color: black;
-  text-decoration: none;
 }
 
 article {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .article-text {
   width: 80%;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .article-img {
   width: 20%;
-  height: 200px;
-  background-color: bisque;
+  height: 150px;
+  background-image: url(../img/react.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 .article-label {
-  font-weight: 200;
+  font-weight: lighter;
   display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 
 .article-icon {
   display: inline-block;
   width: 25px;
   height: 25px;
-  background-color: blue;
+  background-color: black;
   border-radius: 50%;
 }
 
@@ -102,24 +134,56 @@ article {
   flex-direction: column;
   align-items: center;
   width: 90%;
-  text-align: left;
   justify-content: space-around;
   padding: 2rem 0;
-  border-bottom: 1px solid grey;
+}
+
+.twitter-section {
+  border-bottom: 1px solid lightgray;
 }
 
 .twitter-section > * {
   margin: 1rem;
 }
 
-.pills {
+.medium-icon {
+  width: 40px;
+  margin: 5px;
+}
+
+.twitter-icon {
+  width: 20px;
+  margin: 5px;
+}
+
+.medium-twitter,
+.twitter-button {
+  align-items: center;
+}
+
+.medium-twitter span {
+  font-size: 1.5rem;
+  color: grey;
+}
+
+.twitter-section .pills {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
 }
 
-.pill {
+.pills > .pill {
   margin: 0.3rem;
+  padding: 9px;
+}
+
+.pills button:last-child {
+  padding: 9px 18px 9px 18px;
+}
+
+.pill {
+  border: none;
+  background-color: lightgray;
 }
 
 .people-element {
@@ -131,7 +195,9 @@ article {
 .people-img {
   width: 60px;
   height: 60px;
-  background-color: royalblue;
+  background-image: url(../img/guy.jpeg);
+  background-position: center;
+  background-size: cover;
   border-radius: 50%;
 }
 
@@ -143,4 +209,49 @@ article {
   align-items: start;
   flex-direction: column;
   padding-left: 1rem;
+}
+
+.article-bottom {
+  justify-content: space-between;
+}
+
+.article-bottom li {
+  margin-right: 30px;
+  font-size: small;
+  color: gray;
+}
+
+.article-bottom ul {
+  padding: 0;
+  margin-top: 0;
+  align-items: center;
+}
+
+.article-bottom li:first-child {
+  list-style: none;
+}
+
+.article-bottom img {
+  max-width: 35px;
+}
+
+.article-bottom img:last-child {
+  margin-right: 20px;
+}
+
+.article-author {
+  align-items: center;
+}
+
+.tabs:last-child a {
+  border-bottom: 2px solid black;
+  padding: 0 8px 16px 8px;
+  font-weight: bold;
+}
+
+.people-names p:first-child {
+  font-weight: bold;
+}
+.people-names p:last-child {
+  font-weight: lighter;
 }
