@@ -5,19 +5,15 @@
 */
 
 let numero1 = 2;
-let numero2 = "testo";
+let numero2 = "4";
 
 if (typeof numero1 === "number" && typeof numero2 === "number") {
   if (numero1 < numero2) {
-    console.log(`Il secondo numero è più grande`);
+    console.log(`Il secondo numero è il più grande`);
   } else if (numero1 === numero2) {
     console.log("I numeri sono uguali");
-  } else {
-    console.log("Il primo numero è il più grande");
-  }
-} else {
-  console.log("Non sono due numeri");
-}
+  } else console.log("Il primo numero è il più grande");
+} else console.log("Non sono due numeri");
 
 /*
 ESERCIZIO 2
@@ -30,7 +26,7 @@ ESERCIZIO 2
   num >= 20 - mostra in console "Huge"
 */
 
-let num;
+let num = 21;
 if (num < 5) {
   console.log("Tiny");
 } else if (num < 10) {
@@ -39,7 +35,7 @@ if (num < 5) {
   console.log("Medium");
 } else if (num < 20) {
   console.log("Large");
-} else console.log("Huge");
+} else if (num >= 20) console.log("Huge");
 
 //ESERCIZI SUI CICLI:
 
@@ -59,8 +55,8 @@ for (let i = 0; i <= 10; i++) {
 
 for (let i = 0; i <= 15; i++) {
   if (i % 2 === 0) {
-    console.log(`${i} è pari`);
-  } else console.log(`${i} è dispari`);
+    console.log(`${i} Pari`);
+  } else console.log(`${i} Dispari`);
 }
 
 //ESERCIZI EXTRA NON OBBLIGATORI
@@ -69,13 +65,17 @@ for (let i = 0; i <= 15; i++) {
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-let intero1 = 17;
-let intero2 = 9;
+let intero1 = 5;
+let intero2 = 8;
 
-if (intero1 + intero2 === 8 || intero1 - intero2 === 8) {
-  console.log("o + o - sempre 8");
-}
-if (intero1 === 8 || intero2 === 8) console.log("Uno dei 2 è 8");
+if (
+  intero1 + intero2 === 8 ||
+  intero1 - intero2 === 8 ||
+  intero1 === 8 ||
+  intero2 === 8
+) {
+  console.log("Condizione Verificata");
+} else console.log("Condizione Non Verificata");
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
