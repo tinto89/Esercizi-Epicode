@@ -22,7 +22,7 @@ REGOLE
 /* ESERCIZIO 2
  Descrivi cos'è un oggetto in JavaScript, con parole tue.
 
- Quando il valore di una variabile è tipo una lista, che può essere tra {} o [],si parla di oggetto.
+ Quando il valore di una variabile è tipo una lista con 2 articoli per riga (key and value), e deve essere tra {},si parla di oggetto.
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.*/
