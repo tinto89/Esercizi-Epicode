@@ -36,7 +36,7 @@ const amy = {
 
 const prices = [34, 5, 2];
 const shippingCost = 50;
-let user = amy; //cambia il valore qui per provare se il tuo algoritmo funziona!
+let user = marco; //cambia il valore qui per provare se il tuo algoritmo funziona!
 
 let totCart = 0;
 for (let i = 0; i < prices.length; i++) {
