@@ -81,7 +81,14 @@ console.log(upperFirst3("ciao"));
  Scrivi una funzione chiamata "giveMeRandom", che accetta come parametro un numero chiamato n e ritorna un array contenente n numeri random contenuti tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function giveMeRandom(n) {
+  let random = [];
+  for (let i = 0; i < n; i++) {
+    random.push(Math.floor(Math.random() * 11));
+  }
+  return random;
+}
+console.log(giveMeRandom(20));
 
 //EXTRA:
 /* ESERCIZIO 1
