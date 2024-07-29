@@ -52,7 +52,12 @@
             <li>Robusto design con Ceramic Shield</li>
           </ul>
           <p>Prezzo 629€</p>
-          <input type="text" />
+          <input
+            type="text"
+            class="comment"
+            placeholder="Mandaci un commento"
+          />
+          <input type="submit" value="Invia" onclick="thanks()" />
         </td>
       </tr>
       <th>Poco F6 Pro</th>
@@ -83,7 +88,12 @@
             <li>Premium metal frame design: glass back with marbled finish</li>
           </ul>
           <p>Prezzo 506€</p>
-          <input type="text" />
+          <input
+            type="text"
+            class="comment"
+            placeholder="Mandaci un commento"
+          />
+          <input type="submit" value="Invia" onclick="thanks()" />
         </td>
       </tr>
       <th>Xiaomi 14</th>
@@ -101,7 +111,12 @@
             <li>Memory storage capacity: 12.0 GB</li>
           </ul>
           <p>Prezzo 697€</p>
-          <input type="text" />
+          <input
+            type="text"
+            class="comment"
+            placeholder="Mandaci un commento"
+          />
+          <input type="submit" value="Invia" onclick="thanks()" />
         </td>
       </tr>
       <th>Oppo Find x3 Pro</th>
@@ -118,18 +133,21 @@
           <ul>
             <li>Display OLED</li>
             <li>
-              La tecnologia di miglioramento della scena ai Trova l'X3 Pro
-              identifica in modo intelligente la scena e regola i colori di
-              conseguenza
+              Trova ai di Find X3 Pro identifica in modo intelligente la scena e
+              regola i colori di conseguenza
             </li>
             <li>
               La tavolozza ai di Find X3 Pro può apprendere il profilo colore di
-              qualsiasi immagine sul tuo smartphone e trasformarlo in un filtro
-              personalizzato
+              qualsiasi immagine sul tuo smartphone
             </li>
           </ul>
           <p>Prezzo 439€</p>
-          <input type="text" />
+          <input
+            type="text"
+            class="comment"
+            placeholder="Mandaci un commento"
+          />
+          <input type="submit" value="Invia" onclick="thanks()" />
         </td>
       </tr>
       <th>Samsung S24 Ultra</th>
@@ -159,7 +177,12 @@
             </li>
           </ul>
           <p>Prezzo 939€</p>
-          <input type="text" />
+          <input
+            type="text"
+            class="comment"
+            placeholder="Mandaci un commento"
+          />
+          <input type="submit" value="Invia" onclick="thanks()" />
         </td>
       </tr>
     </table>
@@ -173,7 +196,12 @@
     <button type="button" onclick="injectClassOnHyperlink()">
       Cambia il colore dei link
     </button>
-    <button type="button" onclick="hiddenImage()">Nascondi le immagini</button>
+    <button type="button" onclick="hiddenImage()">
+      Mostra/Nascondi le immagini
+    </button>
+    <button type="button" onclick="changePriceColorRandomly()">
+      Cambia il colore del prezzo a caso
+    </button>
     <footer>
       <h4>Tinto Computers srl</h4>
       <p>Via Tinto, 89 - 37100 Verona VR</p>
@@ -205,6 +233,30 @@
       for (let i = 0; i < img.length; i++) {
         img[i].classList.toggle("hidden");
       }
+    }
+
+    function changePriceColorRandomly() {
+      let price = document.querySelectorAll("td p");
+      for (let i = 0; i < price.length; i++) {
+        price[i].style.color = getRandomColor();
+      }
+    }
+
+    function getRandomColor() {
+      let b = "0123456789ABCDEF";
+      let randomColor = "#";
+      for (let i = 0; i < 6; i++) {
+        randomColor += b[Math.floor(Math.random() * 16)];
+      }
+      return randomColor;
+    }
+
+    function thanks() {
+      let text = document.querySelectorAll(".comment");
+      for (let i = 0; i < text.length; i++) {
+        text[i].value = "";
+      }
+      alert("Grazie!");
     }
   </script>
 </html>
