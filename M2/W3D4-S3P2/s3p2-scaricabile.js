@@ -1,5 +1,5 @@
-// Il tuo compito è creare un sito e-commerce per Smartphones. 
-// L'homepage che stai per creare sarà la vetrina dei prodotti disponibili, con qualche informazione per ciascun prodotto. 
+// Il tuo compito è creare un sito e-commerce per Smartphones.
+// L'homepage che stai per creare sarà la vetrina dei prodotti disponibili, con qualche informazione per ciascun prodotto.
 // Non sono richieste funzionalità di carrello/cassa.
 // - Completa gli esercizi dall'1 al 6 SOLAMENTE con HTML
 // - Completa gli altri esercizi con JS
@@ -21,4 +21,53 @@
 // ESERCIZIO 11: Scrivi una funzione per aggiungere/togliere una classe CSS a tutte le immagini della tabella; questa classe deve modificare la visibilità/invisibilità dell'immagine
 // ESERCIZIO 12: Scrivi una funzione per cambiare il colore del prezzo di ogni prodotto in uno differente, ogni volta che viene invocata
 
+function changeH1() {
+  document.querySelector("h1").innerText = "Tinto Computers - Smartphones";
+}
 
+function changeBackgroundColor() {
+  document.querySelector("body").style.backgroundColor = "lightgray";
+}
+
+function changeAddress() {
+  document.querySelector("footer p").innerText =
+    "Via Fittizia, 0 - 0000 Fittizia";
+}
+
+function injectClassOnHyperlink() {
+  let a = document.querySelectorAll("a");
+  for (let i = 0; i < a.length; i++) {
+    a[i].classList.add("hyperLink");
+  }
+}
+
+function hiddenImage() {
+  let img = document.querySelectorAll("img");
+  for (let i = 0; i < img.length; i++) {
+    img[i].classList.toggle("hidden");
+  }
+}
+
+function changePriceColorRandomly() {
+  let price = document.querySelectorAll("td p");
+  for (let i = 0; i < price.length; i++) {
+    price[i].style.color = getRandomColor();
+  }
+}
+
+function getRandomColor() {
+  let b = "0123456789ABCDEF";
+  let randomColor = "#";
+  for (let i = 0; i < 6; i++) {
+    randomColor += b[Math.floor(Math.random() * 16)];
+  }
+  return randomColor;
+}
+
+function thanks() {
+  let text = document.querySelectorAll(".comment");
+  for (let i = 0; i < text.length; i++) {
+    text[i].value = "";
+  }
+  alert("Grazie!");
+}

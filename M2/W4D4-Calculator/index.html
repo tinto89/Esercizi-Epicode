@@ -1,0 +1,38 @@
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcolatrice</title>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">
+        <input type="text" name="monitor" id="monitor" />
+      </div>
+      <div>
+        <input type="submit" value="7" id="7" onclick="inject(7)" />
+        <input type="submit" value="8" id="8" onclick="inject(8)" />
+        <input type="submit" value="9" id="9" onclick="inject(9)" />
+        <input type="submit" value="*" id="*" onclick="inject('*')" />
+      </div>
+      <div>
+        <input type="submit" value="4" id="4" onclick="inject(4)" />
+        <input type="submit" value="5" id="5" onclick="inject(5)" />
+        <input type="submit" value="6" id="6" onclick="inject(6)" />
+        <input type="submit" value="-" id="-" onclick="inject('-')" />
+      </div>
+      <div>
+        <input type="submit" value="1" id="1" onclick="inject(1)" />
+        <input type="submit" value="2" id="2" onclick="inject(2)" />
+        <input type="submit" value="3" id="3" onclick="inject(3)" />
+        <input type="submit" value="+" id="+" onclick="inject('+')" />
+      </div>
+      <div>
+        <input type="submit" value="C" id="C" onclick="cancel()" />
+        <input type="submit" value="0" id="0" onclick="inject(0)" />
+        <input type="submit" value="=" id="same" onclick="result()" />
+        <input type="submit" value="/" id="/" onclick="inject('/')" />
+      </div>
+    </div>
+  </body>
+</html>

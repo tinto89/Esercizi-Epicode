@@ -1,0 +1,42 @@
+.jumbotron h1 {
+  border: 2px solid yellow;
+}
+nav.d-flex > * {
+  background-color: aquamarine;
+}
+
+nav.d-flex > *:nth-child(even) {
+  background-color: blue;
+}
+
+.font-weight-bold {
+  border: 2px solid red;
+}
+div.blog-post:first-of-type {
+  border: 2px solid blue;
+}
+
+div.blog-post:first-of-type hr {
+  background-color: red;
+}
+.list-unstyled.mb-0 li {
+  border: 2px solid green;
+}
+div.blog-post:nth-of-type(2) .blog-post-meta {
+  border: 2px solid red;
+}
+
+div.blog-post:last-of-type ul li:nth-child(2) {
+  border: 2px solid red;
+}
+
+.float-right {
+  border: 2px solid red;
+}
+
+.btn.btn-outline-secondary.disabled {
+  border: 2px solid green;
+}
+footer a + a {
+  border: 2px solid red;
+}
