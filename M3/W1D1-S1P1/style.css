@@ -1,26 +1,26 @@
 .jumbotron h1 {
-  border: 2px solid yellow;
+  border: 2px solid red;
 }
 nav.d-flex > * {
   background-color: aquamarine;
 }
 
 nav.d-flex > *:nth-child(even) {
-  background-color: blue;
+  background-color: pink;
 }
 
 .font-weight-bold {
   border: 2px solid red;
 }
 div.blog-post:first-of-type {
-  border: 2px solid blue;
+  border: 2px solid red;
 }
 
 div.blog-post:first-of-type hr {
   background-color: red;
 }
 .list-unstyled.mb-0 li {
-  border: 2px solid green;
+  border: 2px solid red;
 }
 div.blog-post:nth-of-type(2) .blog-post-meta {
   border: 2px solid red;
@@ -35,7 +35,7 @@ div.blog-post:last-of-type ul li:nth-child(2) {
 }
 
 .btn.btn-outline-secondary.disabled {
-  border: 2px solid green;
+  border: 2px solid red;
 }
 footer a + a {
   border: 2px solid red;
